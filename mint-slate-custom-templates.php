@@ -7,8 +7,8 @@
  * Author: Mint Slate
  * Author URI: http://www.mintslate.com
  */
-define( 'FL_TEMPLATES_PWS_DIR', plugin_dir_path( __FILE__ ) );
-define( 'FL_TEMPLATES_PWS_URL', plugins_url( '/', __FILE__ ) );
+define( 'FL_TEMPLATES_MINT_DIR', plugin_dir_path( __FILE__ ) );
+define( 'FL_TEMPLATES_MINT_URL', plugins_url( '/', __FILE__ ) );
 
 function fl_templates_mint_load() {
 
@@ -23,7 +23,7 @@ function fl_templates_mint_load() {
 	/**
 	 * Register the .dat file.
 	 */
-	FLBuilder::register_templates( FL_TEMPLATES_PWS_DIR . 'data/templates.dat' );
+	FLBuilder::register_templates( FL_TEMPLATES_MINT_DIR . 'data/templates.dat' );
 }
 
 add_action( 'plugins_loaded', 'fl_templates_mint_load' );
